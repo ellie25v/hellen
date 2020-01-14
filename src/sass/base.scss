@@ -1,0 +1,104 @@
+html{
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: $h-font;
+  font-weight: 400;
+}
+
+.container {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 48px 0;
+}
+
+  @media (min-width: 768px) {
+    .section {
+      padding: 58px 0;
+    }
+
+    .container {
+      width: 688px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .container {
+      width: 1210px;
+      
+    }
+
+    .section {
+      padding: 68px 0;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .container {
+      width: 1210px;
+      
+    }
+
+    .section {
+      padding: 68px 0;
+    }
+  }
+
+  @media (min-width: 1680px) {
+    .container {
+      width: 1340px;
+      
+    }
+
+    .section {
+      padding: 110px 0;
+    }
+  }
