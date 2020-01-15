@@ -13,6 +13,7 @@
         transform: translateY(-25%);
         margin-left: calc(100% - 149px);
         margin-bottom: 212px;
+        background-repeat: no-repeat;
     }
 
     &__title {
@@ -100,4 +101,73 @@
     }
 
 
+}
+
+@media (max-width: 768px) {
+    &::before {
+        background-image: url('../images/timeline.svg');
+    }
+}
+
+@media (min-width: 768px) {
+    .program {
+        background-color: #000;
+        margin-bottom: 170px;
+        position: relative;
+        letter-spacing: 0.3px;
+
+        &::after {
+            background-image: url('../images/program-md.png');
+            width: 406px;
+            height: 289px;
+            transform: translateY(-62%);
+            margin-left: calc(100% - 406px);
+            margin-bottom: 10px;
+        }
+
+        &__title {
+            font-size: 27px;
+            letter-spacing: 2px;
+            font-weight: 900;
+        }
+
+        &__list {
+            position: relative;
+            margin-top: 20px;
+            margin-left: 90px;
+            padding-left: 38px;
+
+            &::before {
+                background-image: url('../images/timeline-md.svg');
+                height: 734px;
+                left: 0;
+            }
+
+            &-item {
+                width: 520px;
+            }
+
+            &-semester {
+                padding: 2.7px 0;
+            }
+
+
+            &-options {
+                display: flex;
+            }
+
+            &-parts {
+                width: 196px;
+            }
+
+
+            &-descrp {
+                width: 158px;
+
+                &:not(:first-child) {
+                    padding-top: 6px;
+                }
+            }
+        }
+    }
 }
