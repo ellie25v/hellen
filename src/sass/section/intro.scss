@@ -1,0 +1,95 @@
+.intro {
+    margin-top: 52px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 50px;
+}
+
+.main-text {
+    @extend %menu-title;
+    font-size: 20px;
+    line-height: 29px;
+    font-weight: 900;
+    letter-spacing: 0.6px;
+}
+
+
+.text1,
+.text2,
+.text2-color {
+    
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.7px;
+    color: $grey-color;
+}
+
+.text1 {
+    margin-top: 30px;
+}
+
+.text2 {   
+    color: black;
+}
+
+.text2-color {      
+    color: $orange-color;
+}
+
+.intro-btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 28px;
+    width: 250px;
+    height: 48px;
+    background-color: $orange-color;
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 29px;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+    color: white;
+}
+.img-intro {
+    display: block;
+    margin: 0 auto;
+    padding-top: 35px;
+}
+
+.options__list {
+    width: 210px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 86px;
+
+}
+
+.options__list-item {
+    position: relative;
+    padding-left: 80px;
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 0.7px;
+
+    &:not(:first-child) {
+        margin-top: 26px;
+    }
+
+    &:before {
+        background-image: url('../images/hellen-mobile_01.png');
+        background-repeat: no-repeat;
+        display: block;
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 58px;
+        height: 58px;
+    }
+
+}
