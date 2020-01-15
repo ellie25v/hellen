@@ -1,0 +1,87 @@
+.teacher__title {
+    font-size: 20px;
+    color: rgb(17, 21, 23);
+    font-weight: 700;
+    line-height: 1.5;
+    padding-bottom: 22px;
+}
+
+.teacher__title--name {
+    font-size: 16px;
+    line-height: 1.823;
+    color: rgb(17, 21, 23);
+    border-bottom: 1px solid $grey-color;
+    margin-bottom: 24px;
+}
+
+.teacher__photo{
+    width: 100%;
+}
+
+.teacher__photo img{
+    object-fit: cover;
+}
+
+.teacher__photo--tab,
+.teacher__photo--desk {
+    display: none;
+}
+
+@media (min-width:768px) {
+
+    .teacher__title {
+        font-size: 26px;
+        line-height: 2.405;
+    }
+
+    .teacher-content {
+        display: flex;
+    }
+
+    .teacher__title--name {
+        font-size: 20px;
+        line-height: 1.458;
+    }
+
+    .teacher__photo {
+        padding-right: 44px;
+    }
+
+    .teacher__photo--tab {
+        display: block;
+    }
+
+    .teacher__photo--mob {
+        display: none;
+    }
+
+}
+
+@media (min-width:1280px) {
+    .teacher__title {
+        font-size: 42px;
+        line-height: 1.489;
+        padding-bottom: 52px;
+    }
+
+    .teacher__photo {
+        padding-right: 88px;
+    }
+
+    .teacher__photo--tab {
+        display: none;
+    }
+
+    .teacher__photo--desk {
+        display: block;
+    }
+}
+
+
+@media (min-width:1680px) {
+    .teacher__title {
+        font-size: 46px;
+        line-height: 1.365;
+        padding-bottom: 68px;
+    }
+}
