@@ -1,18 +1,46 @@
 .program {
     background-color: #000;
     margin-bottom: 200px;
+    position: relative;
+    letter-spacing: 0.3px;
+
+    &::after {
+        content: "";
+        display: block;
+        background-image: url('../images/program-mob.png');
+        width: 149px;
+        height: 177px;
+        transform: translateY(-25%);
+        margin-left: calc(100% - 149px);
+        margin-bottom: 212px;
+    }
 
     &__title {
         @extend %main-title;
+        font-size: 20px;
+        line-height: 0.5;
         color: #ffffff;
-        text-align: center;
+        text-align: left;
+        margin-left: 4px;
     }
 
     &__list {
+        position: relative;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            background-image: url('../images/timeline.svg');
+            width: 12px;
+            height: 1251px;
+            position: absolute;
+            top: 44px;
+            left: 20px;
+        }
 
         &-item {
-            width: 126px;
-            padding-top: 28px;
+            width: 148px;
+            padding-top: 26px;
             margin: 0 auto;
         }
 
@@ -21,8 +49,9 @@
             font-size: 15px;
             line-height: 1.5;
             color: white;
-            padding-top: 12px;
+            padding: 5.2px 0;
             text-transform: uppercase;
+
         }
 
         &-title {
@@ -32,7 +61,7 @@
             font-family: $main-font;
             text-transform: capitalize;
             display: inline-block;
-            padding: 14px 0;
+            padding: 16px 0;
 
             &::before {
                 content: "";
@@ -42,6 +71,7 @@
                 background-color: $orange-color;
                 margin-bottom: 4px;
                 margin-right: 12px;
+                margin-left: 2px;
             }
         }
 
@@ -51,11 +81,23 @@
             line-height: 1.5;
             text-align: left;
             padding-left: 4px;
+            letter-spacing: -0.3px;
 
-            &:not(:first-child){
+            &:not(:first-child) {
                 padding-top: 4px;
             }
         }
 
     }
+
+    .last {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .first {
+        padding-top: 14px;
+    }
+
+
 }
