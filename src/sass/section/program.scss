@@ -1,0 +1,61 @@
+.program {
+    background-color: #000;
+    margin-bottom: 200px;
+
+    &__title {
+        @extend %main-title;
+        color: #ffffff;
+        text-align: center;
+    }
+
+    &__list {
+
+        &-item {
+            width: 126px;
+            padding-top: 28px;
+            margin: 0 auto;
+        }
+
+        &-semester {
+            @extend %menu-title;
+            font-size: 15px;
+            line-height: 1.5;
+            color: white;
+            padding-top: 12px;
+            text-transform: uppercase;
+        }
+
+        &-title {
+            font-size: 13px;
+            color: $orange-color;
+            font-weight: 600;
+            font-family: $main-font;
+            text-transform: capitalize;
+            display: inline-block;
+            padding: 14px 0;
+
+            &::before {
+                content: "";
+                display: inline-block;
+                width: 25px;
+                height: 2px;
+                background-color: $orange-color;
+                margin-bottom: 4px;
+                margin-right: 12px;
+            }
+        }
+
+        &-descrp {
+            @extend %program-text;
+            font-size: 11px;
+            line-height: 1.5;
+            text-align: left;
+            padding-left: 4px;
+
+            &:not(:first-child){
+                padding-top: 4px;
+            }
+        }
+
+    }
+}
