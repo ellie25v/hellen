@@ -171,7 +171,7 @@
             padding-top: 5.2px;
         }
 
-        &::before{
+        &::before {
             content: "";
             display: block;
             height: 2px;
@@ -245,23 +245,52 @@
 @media (min-width: 1680px) {
 
     .program {
+        height: 1220px;
+        padding-top: 100px;
         padding-bottom: 0;
 
-        &::before{
-            top: 227px;
+        &::before {
+            height: 4px;
+            top: 260px;
         }
 
         &::after {
             background-image: url('../images/program-big.png');
             width: 704px;
             height: 489px;
-            transform: translateY(-42%);
+            transform: translateY(-34%);
             margin-left: 0;
-            margin-bottom: 24px;
+            margin-bottom: 0;
         }
 
         &__title {
             margin-top: 20px;
+        }
+
+        &__list {
+            padding-top: 100px;
+
+            &::before {
+                background-image: url('../images/timeline-big.svg');
+                height: 23px;
+                width: 1680px;
+                left: -169px;
+                top: 74px;
+            }
+
+            &-item {
+                padding-left: 28px;
+                width: 280px;
+
+                &:last-child {
+                    width: 168px;
+                    padding-left: 38px;
+                }
+
+                &:first-child {
+                    padding-left: 16px;
+                }
+            }
         }
     }
 }
