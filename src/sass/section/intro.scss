@@ -13,11 +13,10 @@
     letter-spacing: 0.6px;
 }
 
-
 .text1,
 .text2,
 .text2-color {
-    
+
     font-family: $main-font;
     font-weight: 700;
     font-size: 15px;
@@ -30,18 +29,17 @@
     margin-top: 30px;
 }
 
-.text2 {   
+.text2 {
     color: black;
 }
 
-.text2-color {      
+.text2-color {
     color: $orange-color;
 }
 
 .intro-btn {
-    display: block;
-    margin: 0 auto;
     margin-top: 28px;
+    
     width: 250px;
     height: 48px;
     background-color: $orange-color;
@@ -53,6 +51,7 @@
     text-transform: uppercase;
     color: white;
 }
+
 .img-intro {
     display: block;
     margin: 0 auto;
@@ -80,8 +79,8 @@
         margin-top: 26px;
     }
 
+
     &:before {
-        background-image: url('../images/hellen-mobile_01.png');
         background-repeat: no-repeat;
         display: block;
         position: absolute;
@@ -90,6 +89,60 @@
         left: 0;
         width: 58px;
         height: 58px;
+        
     }
 
+    &:nth-child(2)::before {
+        background-image: url('../images/hellen-mobile_03.png');
+    }
+
+    &:last-child::before {
+        background-image: url('../images/hellen-mobile_02.png');
+    }
+
+    &:first-child::before {
+        background-image: url('../images/hellen-mobile_01.png');
+    }
+
+
+}
+
+@media (min-width: 768px) {
+    .intro {
+        margin-top: 82px;
+      
+    }
+    
+    .main-text {
+        font-family: $main-font;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0.9px;
+        color: black;
+        font-size: 26px;
+        line-height: 30px;
+        font-weight: 900;
+    }
+
+    .text1,
+    .text2,
+    .text2-color {
+    letter-spacing: 3px;
+    font-weight: 900;
+   
+    }
+
+
+    .intro-btn {
+       display: block;
+       margin-top: 38px;
+      
+    }
+
+    // .img-intro {
+    //     display: block;
+       
+        
+    // }
 }
