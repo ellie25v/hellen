@@ -103,18 +103,9 @@
 
 }
 
-@media (max-width: 768px) {
-    &::before {
-        background-image: url('../images/timeline.svg');
-    }
-}
-
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1279px) {
     .program {
-        background-color: #000;
         margin-bottom: 170px;
-        position: relative;
-        letter-spacing: 0.3px;
 
         &::after {
             background-image: url('../images/program-md.png');
@@ -132,7 +123,6 @@
         }
 
         &__list {
-            position: relative;
             margin-top: 20px;
             margin-left: 90px;
             padding-left: 38px;
@@ -168,6 +158,110 @@
                     padding-top: 6px;
                 }
             }
+        }
+    }
+
+}
+
+
+@media (min-width: 1280px) {
+    .program {
+
+        .first {
+            padding-top: 5.2px;
+        }
+
+        &::before{
+            content: "";
+            display: block;
+            height: 2px;
+            width: 100%;
+            background-color: #546264;
+            position: absolute;
+            top: 165px;
+        }
+
+        &::after {
+            background-image: url('../images/program-lg.png');
+            width: 549px;
+            height: 402px;
+            transform: translateY(-42%);
+            margin-left: 0;
+            margin-bottom: 24px;
+        }
+
+        &__title {
+            font-weight: 900;
+            font-size: 42px;
+            line-height: 56px;
+            letter-spacing: 2.1px;
+        }
+
+        &__list {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 40px;
+            margin-left: 0;
+            padding-left: 0;
+
+            &::before {
+                background-image: url('../images/timeline-lg.svg');
+                height: 19px;
+                width: 1280px;
+                left: -36px;
+                top: 32px;
+            }
+
+            &-item {
+                width: 278px;
+                padding-top: 36px;
+
+                &:last-child {
+                    width: 150px;
+                }
+            }
+
+            &-semester {
+                font-weight: 700;
+                font-size: 21px;
+                letter-spacing: 0.9px;
+                padding-bottom: 10.2px;
+            }
+
+            &-title {
+                font-size: 21px;
+            }
+
+            &-descrp {
+                font-size: 19px;
+                padding-top: 4px;
+            }
+
+
+        }
+    }
+}
+
+@media (min-width: 1680px) {
+
+    .program {
+        padding-bottom: 0;
+
+        &::before{
+            top: 227px;
+        }
+
+        &::after {
+            background-image: url('../images/program-big.png');
+            width: 704px;
+            height: 489px;
+            transform: translateY(-42%);
+            margin-left: 0;
+            margin-bottom: 24px;
+        }
+
+        &__title {
+            margin-top: 20px;
         }
     }
 }
