@@ -280,16 +280,20 @@
 
             &-item {
                 padding-left: 28px;
-                width: 280px;
+                width: 300px;
 
                 &:last-child {
                     width: 168px;
-                    padding-left: 38px;
+                    padding-left: 30px;
                 }
 
                 &:first-child {
                     padding-left: 16px;
                 }
+            }
+
+            &-semester {
+                font-size: 22px;
             }
         }
     }
