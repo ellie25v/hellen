@@ -1,4 +1,6 @@
 .why {
+    position: relative;
+
     &__title {
         @extend %main-title;
         color: white;
@@ -10,12 +12,11 @@
 .list {
     width: 280px;
     background-color: #fff;
-    box-shadow: 4px 6.928px 10.5px rgba(29,29,27,0.04);
+    box-shadow: 4px 6.928px 10.5px rgba(29, 29, 27, 0.04);
     padding: 2px 0 30px 24px;
 
     &-container {
         position: absolute;
-        top: 281%;
         left: 50%;
         transform: translateX(-50%);
 
@@ -57,55 +58,87 @@
 }
 
 @media (max-width: 767px) {
-    .why__title {
-        font-size: 20px;
-        line-height: 1.5;
-        text-align: left;
-        width: 150px;
+    .why {
+        .container {
+            top: -630%;
+        }
+
+        &__title {
+            font-size: 20px;
+            line-height: 1.5;
+            text-align: left;
+            width: 150px;
+        }
     }
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
     .list {
         width: 688px;
-        padding: 2px 0 30px 24px;
-    
-        &-container {
-            top: 281%;
-        }
-    
+        padding: 20px 100px 30px 100px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
         &-item {
-            width: 250px;
+            width: 210px;
         }
-    
+
         &-title {
-            font-size: 13px;
-            color: $orange-color;
-            font-weight: 600;
-            font-family: $main-font;
-            text-transform: capitalize;
-            display: inline-block;
-            padding: 16px 0;
-    
-            &::before {
-                content: "";
-                display: inline-block;
-                width: 25px;
-                height: 2px;
-                background-color: $orange-color;
-                margin-bottom: 4px;
-                margin-right: 12px;
-                margin-left: 2px;
+            font-size: 14px;
+        }
+
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    .why {
+        &__title {
+            font-size: 26px;
+            letter-spacing: 1px;
+            line-height: 63px;
+            text-align: center;
+            margin-bottom: 6px;
+        }
+
+        .container {
+            top: -340%;
+        }
+    }
+}
+@media (min-width: 1280px) {
+    .why {
+        &__title {
+            text-align: center;
+            margin-bottom: 6px;
+        }
+
+        .container {
+            top: -240%;
+        }
+    }
+    .list {
+        width: 1210px;
+        padding: 40px 100px 30px 100px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        &-item {
+            width: 274px;
+
+            &:nth-child(n+4){
+                margin-top: 10px;
             }
         }
-    
-        &-descrp {
-            font-size: 13px;
-            letter-spacing: 1px;
-            line-height: 18px;
-            color: black;
-            font-weight: 700;
+
+        &-title {
+            font-size: 21px;
         }
-    
+
+        &-descrp{
+            font-size: 18px;
+        }
+
     }
 }
