@@ -1,0 +1,144 @@
+.garanty {
+    padding-top: 0;
+}
+
+.garanty__title {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(17, 21, 23);
+    font-weight: 800;
+    padding: 48px 0 30px;
+}
+
+.garanty__container {
+    padding: 24px 0 30px;
+}
+
+
+.garanty__list--item {
+    display: flex;
+    flex-basis: 280px;
+
+    &:not(:last-child) .garanty__list--item-text {
+        padding-bottom: 16px;
+    }
+
+    &:last-child .garanty__list--icon {
+        height: 14.44px;
+    }
+}
+
+.garanty__list--icon {
+    display: block;
+    width: 14px;
+    height: 18px;
+    fill: $orange-color;
+}
+
+.garanty__list--line {
+    display: block;
+    height: 100%;
+    width: 1px;
+    border-right: 1px dotted $grey-color;
+}
+
+.garanty__list--item-box {
+    flex-basis: 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 22px;
+}
+
+.garanty__list--item-text {
+    display: block;
+    min-width: 224px;
+    font-size: 11px;
+    letter-spacing: .55;
+    color: rgb(24, 25, 29);
+    line-height: 1.818;
+    font-weight: 500;
+}
+
+.garanty-text-alert {
+    color: $orange-color;
+}
+
+@media(max-width:768px) {
+    .garanty {
+        background-color: #f1f1f1;
+    }
+
+    .garanty__title {
+        background-color: #fff;
+    }
+
+}
+
+@media(min-width:768px) {
+    .garanty__title {
+        font-size: 26px;
+    }
+
+
+    .garanty__container {
+        background-color: #f1f1f1;
+        padding: 36px 0;
+
+    }
+
+    .garanty__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .garanty__list--item {
+        &:not(:last-child) .garanty__list--item-text {
+            padding-bottom: 24px;
+        }
+    }
+
+    .garanty__list--item-text {
+        width: 556px;
+    }
+}
+
+@media(min-width:1280px) {
+    .garanty__title {
+        font-size: 42px;
+        line-height: 56px;
+        letter-spacing: 2.1px;
+    }
+
+    .garanty__list--icon {
+        width: 28px;
+        height: 40px;
+    }
+
+    .garanty__list--item {
+
+        &:last-child .garanty__list--icon {
+            height: 26.09px;
+        }
+    }
+
+    .garanty__list--item-text {
+        min-width: 906px;
+        font-size: 18px;
+        line-height: 1.62;
+    }
+}
+
+@media(min-width:1280px) {
+    .garanty__title {
+        font-size: 45px;
+    }
+
+    .garanty__list--item-text {
+        font-size: 21px;
+        line-height: 1.4;
+
+    }
+}
