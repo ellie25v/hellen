@@ -106,6 +106,7 @@
         }
     }
 }
+
 @media (min-width: 1280px) {
     .why {
         &__title {
@@ -117,6 +118,7 @@
             top: -240%;
         }
     }
+
     .list {
         width: 1210px;
         padding: 40px 100px 30px 100px;
@@ -127,7 +129,7 @@
         &-item {
             width: 274px;
 
-            &:nth-child(n+4){
+            &:nth-child(n+4) {
                 margin-top: 10px;
             }
         }
@@ -136,9 +138,21 @@
             font-size: 21px;
         }
 
-        &-descrp{
+        &-descrp {
             font-size: 18px;
         }
 
+    }
+}
+
+@media (min-width: 1680px) {
+    .why {
+        .container {
+            top: -100%;
+        }
+    }
+    .list {
+        width: 1340px;
+        padding: 40px 140px 30px 140px;
     }
 }
