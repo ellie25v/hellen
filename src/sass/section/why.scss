@@ -1,0 +1,63 @@
+.why {
+    &__title {
+        @extend %main-title;
+        color: white;
+        font-weight: 900;
+    }
+}
+
+.list {
+    width: 280px;
+    background-color: #fff;
+
+    &-container{
+        
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        
+    }
+    &-item{
+        width: 216px;
+    }
+
+    &-title {
+        font-size: 13px;
+        color: $orange-color;
+        font-weight: 600;
+        font-family: $main-font;
+        text-transform: capitalize;
+        display: inline-block;
+        padding: 16px 0;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            width: 25px;
+            height: 2px;
+            background-color: $orange-color;
+            margin-bottom: 4px;
+            margin-right: 12px;
+            margin-left: 2px;
+        }
+    }
+
+    &-descrp {
+        font-size: 13px;
+        letter-spacing: 1px;
+        line-height: 20px;
+        color: black;
+        font-weight: 700;
+    }
+
+}
+
+@media (max-width: 767px){
+    .why__title{
+        font-size: 20px;
+        line-height: 1.5;
+        text-align: left;
+        width: 150px;
+    }
+}
