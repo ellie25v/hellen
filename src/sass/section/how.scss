@@ -1,0 +1,8 @@
+.how{
+    text-align: center;
+    
+    &__title{
+        @extend %main-title;
+        
+    }
+}
