@@ -1,38 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport"
-      content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible"
-      content="ie=edge" />
-    <title>Placeholder title</title>
-    <!-- Сюда будет всталена ссылка на файл стилей -->
-    <!-- inject:css -->
-    <!-- endinject -->
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Placeholder title</title>
+  <!-- Сюда будет всталена ссылка на файл стилей -->
+  <!-- inject:css -->
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  // Add the new slick-theme.css if you want the default styling
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+  <!-- endinject -->
+</head>
 
-  <body>
-    //= ./html/header.html
-    <main>
+<body>
+  //= ./html/header.html
+  <main>
 
-      //= ./html/intro.html
-      //= ./html/problems.html
-      //= ./html/how.html
-      //= ./html/program.html
-      //= ./html/why.html
-      //= ./html/teacher.html
-      //= ./html/garanty.html
-      //= ./html/feedback.html
-      //= ./html/registration.html
+    //= ./html/intro.html
+    //= ./html/problems.html
+    //= ./html/how.html
+    //= ./html/program.html
+    //= ./html/why.html
+    //= ./html/teacher.html
+    //= ./html/garanty.html
+    //= ./html/feedback.html
+    //= ./html/registration.html
 
-    </main>
-    //= ./html/footer.html
+  </main>
+  //= ./html/footer.html
 
-    <!-- Сюда будет всталена ссылка на файл скриптов -->
-    <!-- inject:js -->
-    <!-- endinject -->
-  </body>
+  <!-- Сюда будет всталена ссылка на файл скриптов -->
+  <!-- inject:js -->
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.your-class').slick({
+        setting - name: setting - value
+      });
+    });
+  </script>
+</body>
 
 </html>
