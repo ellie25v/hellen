@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 733" width="12" height="733">
+	<defs>
+		<image width="12" height="733" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAALdCAYAAAAYiIJEAAACWElEQVR4Xu2cQU7CUBCGZ1yAtxJPIAkHMISdNNEj6A0wgSXBCxDlBj0WuPCZQgulVO0Iafvaj2Xbobw3///PTGeKivGj6etd0OmL00cR6cXHQ1H3qtPPj+S6vYEbd95E9D73hqovOl0/R+e2BvE3v//661RvdboOY4NuKE5u/ljOSmeb/s5g3HVF1q6zjf7TILD+pN12Fl/0dh0P3YmoRD44/WS3NbnCBdc9ce5JRO7iYytRnUTbeeK41NfqYDj6im66XMyvsrc7gkZycjAcbbd5uZifnM8zMN8BA/yQqEZ2JwBfZkdgXLwhqEYR1WjCLgki4KcI4DhPKYrjPHWcWe7xdFs8DTTw9A9VFtAAGpeCBlgCS2DpgAEzHzDwlECk0hU7jl5WXv9o3/yilyVoa8UU5dm9ofMKWj1FK5mAp46DcTiusuIV8AE+wMeTE9t4nlk1SE6QGWQmhQGmi/ycLjIrHwYoH8pHgmVLsMiXUA1Ug3zJphrkGqhG+e800QGnA57K7/I2w/r6J0KGkJH+1LpookKBolD0DIpCIAgEgSAQJf6RDvBXE6WNqxKBiEBEICIQEYgIRNgtLezycJOwW36XBnjzElTzuzSUNGgrJQ1zM5Q0lDSUNE3I+ZguYrqo+XkrzwTqkbdSP9TDD/ABP1DHndGagkAQCAI1i0AkJ3AaTjeL08RpOA2n4bStYUEmgGpUphqAD/BdCnxgCSyBJdIfW/pjLpqQGWSGkduWywwi4KkI4Dgcd6kk0Zw6YOAp+HBcPRzXSvVu5aKLM46h3pYN9eYs93DoG46oS7A47I4qAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="Наша программа">
+		<g id="Timeline">
+			<use id="Ellipse 4 копия 4" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
+		</g>
+	</g>
+</svg>
