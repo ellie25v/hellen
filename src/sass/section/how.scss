@@ -1,8 +1,57 @@
-.how{
+.how {
     text-align: center;
-    
-    &__title{
+
+    &__title {
         @extend %main-title;
-        
+        padding: 30px 10px;
+        box-shadow: 0 0 5px $grey-color;
+        letter-spacing: 0.2px;
+    }
+
+    &__list {
+        margin: 10px 0;
+
+        &-item {
+
+            &:not(:first-child) {
+                margin-top: 20px;
+            }
+        }
+
+        &-svg {
+            width: 50px;
+            height: 50px;
+            fill: $orange-color;
+            margin-top: 10px;
+        }
+
+        &-title {
+            @extend %menu-title;
+            margin-top: 10px;
+        }
+
+        &-descrp {
+            font-size: 11px;
+            color: $grey-color;
+            line-height: 1.5;
+
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .how {
+        &__title {
+            font-size: 20px;
+
+        }
+        &__list {
+
+            &-title {
+                font-size: 13px;
+                line-height: 1.3;
+            }
+
+        }
     }
 }
