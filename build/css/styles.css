@@ -767,6 +767,52 @@ body {
     .options__list-item:last-child::before {
       background-image: url("../images/icon_desktop_3.png"); } }
 
+.problems {
+  height: 518px;
+  margin-bottom: 157px;
+  background-image: url("../images/bg_problems_mobile.png");
+  position: relative; }
+  .problems .container {
+    top: 8%; }
+
+.text-problems {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.9px;
+  color: white; }
+  .text-problems-color {
+    color: #ff6b08; }
+
+.problems__list {
+  margin-top: 20px; }
+
+@media (min-width: 768px) {
+  .problems {
+    height: 334px;
+    margin-bottom: 157px;
+    background-image: url("../images/bg_promlems_tablet.png");
+    position: relative; }
+  .text-problems {
+    padding-top: 53px;
+    font-size: 26px;
+    line-height: 36px;
+    letter-spacing: 2.9px; } }
+
+@media (min-width: 1280px) {
+  .problems {
+    height: 526px;
+    margin-bottom: 76px;
+    background-image: url("../images/bg_problems_desktop.png");
+    position: relative; }
+  .text-problems {
+    font-size: 35px;
+    line-height: 56px;
+    letter-spacing: 2.9px; }
+  .problems__list {
+    margin-top: 20px; } }
+
 .how {
   text-align: center; }
   .how__title {
