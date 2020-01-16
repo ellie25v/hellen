@@ -1,0 +1,129 @@
+.header {
+    width: 100%;
+}
+
+.navigation {
+    padding-top: 26px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.logo-picture {
+    display: block;
+
+}
+
+
+.menu {
+    background-image: url('../images/menu.png');
+    width: 25px;
+    height: 12px;
+    margin-top: 15px;
+
+
+}
+
+@media (max-width: 767px) {
+    .menu-btn {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .header {
+        min-height: 85px;
+    }
+
+
+
+    .logo-img {
+
+        padding-top: 35px;
+    }
+
+    .menu {
+        margin-top: 30px;
+        width: 320px;
+        background-repeat: no-repeat;
+        background-position: right;
+        min-height: 50px;
+
+    }
+
+    .menu-btn-wrapper {
+        padding-bottom: 40px;
+    }
+
+    .menu-btn {
+        width: 250px;
+        height: 47px;
+        border-color: $orange-color;
+        border: 2px solid $orange-color;
+        font-family: $main-font;
+        color: $orange-color;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 29px;
+        letter-spacing: 0.9px;
+        text-transform: uppercase;
+
+    }
+
+}
+
+@media (max-width:1280px) {
+    .menu-fall__list {
+        display: none;
+    }
+}
+
+@media (min-width: 1280px) {
+    .menu {
+        background-image: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        width: 910px;
+
+
+        &-fall__list {
+            width: 564px;
+            display: flex;
+            justify-content: space-between;
+            text-transform: uppercase;
+
+
+
+            &-link {
+                font-family: $main-font;
+                color: #b9b9b9;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 29px;
+                letter-spacing: 0.1px;
+
+                &:hover {
+                    color: $orange-color;
+                }
+            }
+
+
+        }
+
+        &-btn {
+            width: 300px;
+            height: 66px;
+            border-color: $orange-color;
+            border: 2px solid $orange-color;
+            font-family: $main-font;
+            color: $orange-color;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 29px;
+            letter-spacing: 0.1px;
+
+
+        }
+    }
+}
