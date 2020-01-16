@@ -18,7 +18,7 @@
 .text2-color {
 
     font-family: $main-font;
-    font-weight: 700;
+    font-weight: 900;
     font-size: 15px;
     line-height: 20px;
     letter-spacing: 0.7px;
@@ -38,8 +38,7 @@
 }
 
 .intro-btn {
-    margin-top: 28px;
-    
+    display: block;
     width: 250px;
     height: 48px;
     background-color: $orange-color;
@@ -99,7 +98,7 @@
     &:last-child::before {
         background-image: url('../images/hellen-mobile_02.png');
     }
-
+ 
     &:first-child::before {
         background-image: url('../images/hellen-mobile_01.png');
     }
@@ -107,18 +106,35 @@
 
 }
 
+@media (max-width:767px) {
+    .intro-btn {
+        margin:0 auto;
+        margin-top: 28px;
+    }
+       
+}
+
 @media (min-width: 768px) {
     .intro {
         margin-top: 82px;
       
     }
+    .text_img {
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+    }
+
+    .intro-text {
+        width: 290px;
+    }
     
     .main-text {
         font-family: $main-font;
-        font-weight: 700;
-        font-size: 18px;
+        font-weight: 900;
+        font-size: 30px;
         line-height: 28px;
-        letter-spacing: 0.9px;
+        letter-spacing: 3px;
         color: black;
         font-size: 26px;
         line-height: 30px;
@@ -140,9 +156,45 @@
       
     }
 
-    // .img-intro {
-    //     display: block;
-       
+    .img-intro {
+        display: block;
+        min-width: 367px;
+        padding-top: 0;
         
-    // }
+    }
+
+    .options__list {
+      
+        display: flex;
+        width: 688px;
+        justify-content: space-between;
+        padding-top: 86px;
+    
+    }
+
+    .options__list-item {
+       
+        font-family: $main-font;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 18px;
+        letter-spacing: 0.7px;
+        width: 200px;
+        &:not(:first-child) {
+            margin-top: 0;
+        }
+    
+    
+        &:before {
+            background-repeat: no-repeat;
+            display: block;
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 58px;
+            height: 58px;
+            
+        }
+    }
 }
