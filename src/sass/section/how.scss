@@ -3,31 +3,37 @@
 
     &__title {
         @extend %main-title;
-        padding: 30px 10px;
-        box-shadow: 0 0 5px $grey-color;
+        padding: 20px 0;
         letter-spacing: 0.2px;
     }
 
     &__list {
-        margin: 10px 0;
+        margin: 20px 0;
 
         &-item {
-
-            &:not(:first-child) {
-                margin-top: 20px;
-            }
+            width: 290px;
+            height: 268px;
+            box-shadow: 4px 6.928px 16px rgba(29,29,27,0.11);
         }
 
         &-svg {
             width: 50px;
             height: 50px;
             fill: $orange-color;
-            margin-top: 10px;
+            margin-top: 40px;
         }
 
         &-title {
             @extend %menu-title;
-            margin-top: 10px;
+
+            &::after {
+                content: "";
+                display: block;
+                width: 25px;
+                height: 2px;
+                background-color: $orange-color;
+                margin: 15px auto;
+            }
         }
 
         &-descrp {
@@ -46,6 +52,14 @@
 
         }
         &__list {
+
+            &-item {
+                width: 280px;
+
+                &:not(:first-child) {
+                    margin-top: 20px;
+                }
+            }
 
             &-title {
                 font-size: 13px;
