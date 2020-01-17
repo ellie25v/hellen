@@ -1,0 +1,212 @@
+.teacher__title {
+    font-size: 20px;
+    color: rgb(17, 21, 23);
+    font-weight: 800;
+    line-height: 1.5;
+    padding-bottom: 22px;
+}
+
+.teacher__photo {
+    width: 100%;
+}
+
+.teacher__photo--tab,
+.teacher__photo--desk {
+    display: none;
+}
+
+.teacher__title--name {
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 1;
+    color: rgb(17, 21, 23);
+    margin-bottom: 24px;
+
+    &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: $grey-color;
+        margin-top: 12px;
+    }
+}
+
+.teacher__wins-list {
+    padding-bottom: 12px;
+}
+
+.teacher__wins-list--item {
+    display: flex;
+
+    &:not(:last-child) {
+        padding-bottom: 22px;
+    }
+
+    &::before {
+        content: "";
+        display: block;
+        width: 16px;
+        height: 16px;
+        background-image: url("../images/check.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-right: 30px;
+    }
+}
+
+.wins__text {
+    font-size: 13px;
+    color: rgb(17, 21, 23);
+    font-weight: 700;
+    letter-spacing: .65;
+    width: 100%;
+}
+
+.teacher__desc {
+    font-size: 11px;
+    color: rgb(133, 133, 133);
+    line-height: 1.818;
+    padding-bottom: 12px;
+    letter-spacing: 0.55;
+
+    &::before {
+        content: "";
+        display: block;
+        width: 26px;
+        height: 2px;
+        background-color: $orange-color;
+        margin-bottom: 12px;
+    }
+}
+
+.teacher__desc--item:not(:last-child) {
+    padding-bottom: 12px;
+}
+
+.teacher__link {
+    font-size: 11px;
+    color: $grey-color;
+    text-decoration: underline;
+    line-height: 2.652;
+
+    &:hover,
+    &:focus {
+        color: $orange-color;
+    }
+}
+
+
+
+@media (max-width:768px) {
+    .teacher__photo {
+        padding-bottom: 24px;
+    }
+}
+
+@media (min-width:768px) {
+
+    .teacher__title {
+        font-size: 26px;
+        line-height: 2.405;
+    }
+
+    .teacher-content {
+        display: flex;
+    }
+
+    .teacher__title--name {
+        font-size: 20px;
+        line-height: 1;
+
+        &::after {
+            margin-top: 20px;
+        }
+    }
+
+    .teacher__photo {
+        padding-right: 44px;
+    }
+
+    .teacher__photo--tab {
+        display: block;
+    }
+
+    .teacher__photo--mob {
+        display: none;
+    }
+
+    .teacher__wins-list {
+        padding-bottom: 20px;
+    }
+
+    .wins__text {
+        font-size: 13px;
+        line-height: 1.538;
+    }
+
+    .teacher__desc {
+        &::before {
+            margin-bottom: 20px;
+        }
+    }
+
+}
+
+@media (min-width:1280px) {
+    .teacher__title {
+        font-size: 42px;
+        line-height: 1.489;
+        padding-bottom: 52px;
+    }
+
+    .teacher__photo {
+        padding-right: 88px;
+    }
+
+    .teacher__photo--tab {
+        display: none;
+    }
+
+    .teacher__photo--desk {
+        display: block;
+    }
+
+    .teacher__title--name {
+        font-size: 29px;
+    }
+
+    .teacher__wins-list {
+        padding-bottom: 34px;
+    }
+
+    .wins__text {
+        font-size: 16.667px;
+        line-height: 1.75;
+    }
+
+    .teacher__desc {
+        font-size: 16.667px;
+        font-weight: 700;
+        line-height: 1.75;
+
+        &::before {
+            margin-bottom: 34px;
+        }
+    }
+
+    .teacher__link {
+        font-size: 16.667px;
+        line-height: 1.75;
+    }
+}
+
+
+@media (min-width:1680px) {
+    .teacher__title {
+        font-size: 46px;
+        line-height: 1.365;
+        padding-bottom: 68px;
+    }
+
+}

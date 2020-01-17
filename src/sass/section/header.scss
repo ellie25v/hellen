@@ -144,7 +144,10 @@
         line-height: 29px;
         letter-spacing: 0.9px;
         text-transform: uppercase;
-    }
+
+        padding-top: 8px;
+        text-align: center;
+
 
     .modal-menu-fall {
         display: none;
@@ -184,12 +187,14 @@
         display: none;
     }
 
+
     .modal-btn-close {
         right: 42px;
         top: 70px;
     }
 
 }
+
 
 @media (min-width: 1280px) {
     .menu-btn-top {
@@ -244,7 +249,7 @@
             font-size: 14px;
             line-height: 29px;
             letter-spacing: 0.1px;
-
+            padding-top: 16px;
 
         }
     }

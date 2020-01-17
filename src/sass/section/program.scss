@@ -1,0 +1,302 @@
+
+.program {
+    background-color: #000;
+    margin-bottom: 200px;
+    position: relative;
+    letter-spacing: 0.3px;
+
+    &::after {
+        content: "";
+        display: block;
+        background-image: url('../images/program-mob.png');
+        width: 149px;
+        height: 177px;
+        transform: translateY(-25%);
+        margin-left: calc(100% - 149px);
+        margin-bottom: 212px;
+        background-repeat: no-repeat;
+    }
+
+    &__title {
+        @extend %main-title;
+        font-size: 20px;
+        line-height: 0.5;
+        color: #ffffff;
+        text-align: left;
+        margin-left: 4px;
+    }
+
+    &__list {
+        position: relative;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            background-image: url('../images/timeline.svg');
+            width: 12px;
+            height: 1251px;
+            position: absolute;
+            top: 44px;
+            left: 20px;
+        }
+
+        &-item {
+            width: 148px;
+            padding-top: 26px;
+            margin: 0 auto;
+        }
+
+        &-semester {
+            @extend %menu-title;
+            font-size: 15px;
+            line-height: 1.5;
+            color: white;
+            padding: 5.2px 0;
+            text-transform: uppercase;
+
+        }
+
+        &-title {
+            font-size: 13px;
+            color: $orange-color;
+            font-weight: 600;
+            font-family: $main-font;
+            text-transform: capitalize;
+            display: inline-block;
+            padding: 16px 0;
+
+            &::before {
+                content: "";
+                display: inline-block;
+                width: 25px;
+                height: 2px;
+                background-color: $orange-color;
+                margin-bottom: 4px;
+                margin-right: 12px;
+                margin-left: 2px;
+            }
+        }
+
+        &-descrp {
+            @extend %program-text;
+            font-size: 11px;
+            line-height: 1.5;
+            text-align: left;
+            padding-left: 4px;
+            letter-spacing: -0.3px;
+
+            &:not(:first-child) {
+                padding-top: 4px;
+            }
+        }
+
+    }
+
+    .last {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .first {
+        padding-top: 14px;
+    }
+
+
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    .program {
+        margin-bottom: 170px;
+
+        &::after {
+            background-image: url('../images/program-md.png');
+            width: 406px;
+            height: 289px;
+            transform: translateY(-62%);
+            margin-left: calc(100% - 406px);
+            margin-bottom: 10px;
+        }
+
+        &__title {
+            font-size: 27px;
+            letter-spacing: 2px;
+            font-weight: 900;
+        }
+
+        &__list {
+            margin-top: 20px;
+            margin-left: 90px;
+            padding-left: 38px;
+
+            &::before {
+                background-image: url('../images/timeline-md.svg');
+                height: 734px;
+                left: 0;
+            }
+
+            &-item {
+                width: 520px;
+            }
+
+            &-semester {
+                padding: 2.7px 0;
+            }
+
+
+            &-options {
+                display: flex;
+            }
+
+            &-parts {
+                width: 196px;
+            }
+
+
+            &-descrp {
+                width: 158px;
+
+                &:not(:first-child) {
+                    padding-top: 6px;
+                }
+            }
+        }
+    }
+
+}
+
+
+@media (min-width: 1280px) {
+    .program {
+        height: 1030px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        
+
+        &::before {
+            content: "";
+            display: block;
+            height: 2px;
+            width: 100%;
+            background-color: #546264;
+            position: absolute;
+            top: 165px;
+        }
+
+        &::after {
+            background-image: url('../images/program-lg.png');
+            width: 549px;
+            height: 402px;
+            transform: translateY(-42%);
+            margin-left: 0;
+            margin-bottom: 24px;
+        }
+
+        &__title {
+            font-weight: 900;
+            font-size: 42px;
+            line-height: 56px;
+            letter-spacing: 2.1px;
+        }
+
+        &__list {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 40px;
+            margin-left: 0;
+            padding-left: 0;
+
+            &::before {
+                background-image: url('../images/timeline-lg.svg');
+                height: 19px;
+                width: 1280px;
+                left: -36px;
+                top: 32px;
+            }
+
+            &-item {
+                width: 278px;
+                padding-top: 36px;
+
+                &:last-child {
+                    width: 150px;
+                }
+            }
+
+            &-semester {
+                font-weight: 700;
+                font-size: 21px;
+                letter-spacing: 0.9px;
+                padding-bottom: 10.2px;
+            }
+
+            &-title {
+                font-size: 21px;
+            }
+
+            &-descrp {
+                font-size: 19px;
+                padding-top: 4px;
+            }
+
+
+        }
+    }
+}
+
+@media (min-width: 1680px) {
+
+    .program {
+        height: 1220px;
+        padding-top: 100px;
+        padding-bottom: 0;
+
+        &::before {
+            height: 4px;
+            top: 260px;
+        }
+
+        &::after {
+            background-image: url('../images/program-big.png');
+            width: 704px;
+            height: 489px;
+            transform: translateY(-34%);
+            margin-left: 0;
+            margin-bottom: 0;
+        }
+
+        &__title {
+            margin-top: 20px;
+        }
+
+        &__list {
+            padding-top: 100px;
+
+            &::before {
+                background-image: url('../images/timeline-big.svg');
+                height: 23px;
+                width: 1680px;
+                left: -169px;
+                top: 74px;
+            }
+
+            &-item {
+                padding-left: 28px;
+                width: 300px;
+
+                &:last-child {
+                    width: 168px;
+                    padding-left: 30px;
+                }
+
+                &:first-child {
+                    padding-left: 16px;
+                }
+            }
+
+            &-semester {
+                font-size: 22px;
+            }
+        }
+    }
+}
+
