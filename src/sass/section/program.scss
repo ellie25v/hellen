@@ -167,11 +167,10 @@
 
 @media (min-width: 1280px) {
     .program {
+        height: 1030px;
         margin-bottom: 0;
         padding-bottom: 0;
-        .first {
-            padding-top: 5.2px;
-        }
+        
 
         &::before {
             content: "";
