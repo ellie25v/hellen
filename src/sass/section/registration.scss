@@ -1,0 +1,223 @@
+.registration-container{
+    width: 280px;
+    margin: 0 auto;
+  }
+  
+  .registration {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), repeating-linear-gradient(-45deg, rgba(0, 0, 0, 0.2) 0px, rgba(0, 0, 0, 0.2) 2px, transparent 2px, transparent 4px),
+      url('../images/registration-img.JPG');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .registration__title{
+    font-family: var(--main-font);
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 0.7px;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  .registration__title-box{
+    margin-bottom: 20px;
+  }
+  
+  .registration-span__accent{
+    color: #ff6b08;
+  }
+  
+  .registration-description-box{
+    margin: 0 auto;
+    margin-bottom: 24px;
+  }
+  
+  .registration__title-description{
+    font-family: var(--main-font);
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 20px;
+    letter-spacing: 0.7px;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  .registration-form__input{
+    display: block;
+    margin: 0 auto;
+    width: 280px;
+    height: 52px;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: transparent;
+    padding-left: 22px;
+    font-size: 13px;
+    font-weight: 600px;
+    color: #ffffff;
+    letter-spacing: 0.65;
+  }
+  
+  .registration-form__input::placeholder{
+    font-size: 13px;
+    font-weight: 600px;
+    color: #ffffff;
+    letter-spacing: 0.65;
+  }
+  
+  .registration-form__input:required:focus:valid,
+  .registration-form__input:required:focus:valid {
+    border: 1px solid #36d436; 
+  }
+  
+  .registration-form__input:required:focus:invalid,
+  .registration-form__input:required:focus:invalid {
+    border: 1px solid #9c8585;
+  } 
+  
+  .registration-form__input:required:focus,
+  .registration-form__input:required:focus
+   {
+    outline: none;
+  }
+  
+  .registration-form__input--name{
+    margin-bottom: 20px;
+  }
+  
+  .registration-form__input--tel{
+    margin-bottom: 50px;
+  }
+  
+  .registration-form-btn{
+    border: 2px solid rgb(255, 107, 8);
+    background-color: rgb(255, 107, 8);
+    color: #ffffff;
+    width: 250px;
+    height: 50px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-size: 11px;
+    cursor: pointer;
+    font-weight: 700;
+    display: block;
+    margin: 0 auto;
+    letter-spacing: 1.5px;
+  }
+  
+  .registration-form-btn:hover,
+  .registration-form-btn:focus{
+    box-shadow: 0px 3px 9px 0px rgba(255, 107, 8, 0.4);
+  }
+
+  @media (max-width: 767px){
+    .registration-span__block{
+      display: block;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .registration-container{
+      width: 550px;
+    }
+  
+    .registration-form__input{
+      width: 400px;
+      height: 50px;
+    }
+  
+    .registration-description-box{
+      width: 460px;
+      height: 35px;
+      margin-bottom: 34px;
+    }
+  
+    .registration__title-description{
+      font-size: 15px;
+      letter-spacing: 0.75px;
+    }
+  
+    .registration__title{
+      font-size: 22px;
+      line-height: 38px;
+    }
+  
+    .registration__title-box{
+      margin-bottom: 28px;
+    }
+  
+    .registration-span__tablet{
+      display: block;
+    }
+  
+    .registration-form__input--tel{
+      margin-bottom: 30px;
+    }
+  }
+  
+   @media (min-width: 768px) and (max-width: 1279px){
+    .registration__title-description{
+      text-align: left; 
+    }
+  } 
+  
+  @media (min-width: 1280px) {
+  
+    .registration-container{
+      width: 932px;
+    }
+  
+    .registration__title{
+      font-size: 38px;
+      line-height: 50px;
+    }
+  
+    .registration__title-box{
+      margin-bottom: 40px;
+    }
+  
+    .registration__title-description{
+      font-size: 18px;
+      line-height: 24px;
+    }
+  
+    .registration-description-box{
+      width: 540px;
+      margin-bottom: 50px;
+    }
+  
+    .registration-form__input, .registration-form__input::placeholder{
+      width: 620px;
+      height: 72px;
+      font-size: 20px;
+      letter-spacing: 1px;
+      line-height: 37px;
+    }
+  
+    .registration-form-btn{
+      width: 350px;
+      height: 70px;
+      font-size: 14px;
+      letter-spacing: 2.8px;
+    }
+  
+    .registration-form__input--name{
+      margin-bottom: 28px;
+    }
+  
+    .registration-form__input--tel{
+      margin-bottom: 56px;
+    }
+  
+  }
+  
+  @media (min-width: 1680px) { 
+    .registration__title-description{
+      font-size: 25px;
+      line-height: 38px;
+    }
+    .registration-description-box{
+      width: 754px;
+      margin-bottom: 100px;
+    }
+  }

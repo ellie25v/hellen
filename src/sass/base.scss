@@ -47,7 +47,7 @@ img {
 }
 
 body {
-  font-family: $h-font;
+  font-family: $main-font;
   font-weight: 400;
 }
 
@@ -81,16 +81,6 @@ body {
     }
   }
 
-  @media (min-width: 1280px) {
-    .container {
-      width: 1210px;
-      
-    }
-
-    .section {
-      padding: 68px 0;
-    }
-  }
 
   @media (min-width: 1680px) {
     .container {
