@@ -67,6 +67,8 @@
         line-height: 29px;
         letter-spacing: 0.9px;
         text-transform: uppercase;
+        padding-top: 8px;
+        text-align: center;
 
     }
 
@@ -76,7 +78,7 @@
     .menu-fall__list {
         display: none;
     }
-}
+ }
 
 @media (min-width: 1280px) {
     .menu {
@@ -122,7 +124,7 @@
             font-size: 14px;
             line-height: 29px;
             letter-spacing: 0.1px;
-
+            padding-top: 16px;
 
         }
     }
