@@ -564,6 +564,11 @@ body {
     line-height: 29px;
     letter-spacing: 0.9px;
 
+    text-transform: uppercase;
+    padding-top: 8px;
+    text-align: center; } }
+
+
     text-transform: uppercase; }
   .modal-menu-fall {
     display: none;
