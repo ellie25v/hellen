@@ -1,0 +1,322 @@
+img {
+    vertical-align: middle;
+}
+
+.feedback__title {
+    text-align: center;
+    font-size: 20px;
+    color: rgb(17, 21, 23);
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.5;
+    padding-bottom: 20px;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+
+
+.img-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 26px;
+}
+
+.img-box__photo {
+    margin-bottom: 18px;
+}
+
+.vk-icon {
+    display: block;
+    width: 26px;
+    height: 16px;
+}
+
+.arrow-icon {
+    display: block;
+    width: 20px;
+    height: 12px;
+    fill: $orange-color;
+}
+
+.slide-container {
+    position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+    background-color: #fff;
+    box-shadow: 1px 1px 30px #b6b6b6;
+    padding: 20px 26px 36px;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    // transform: translate(0, -50%);
+
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Container for image text */
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+
+.row {
+    padding-top: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.row-box {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 186px;
+}
+
+
+.mySlides__text--name {
+    font-size: 13px;
+    color: $orange-color;
+    font-weight: 700;
+    letter-spacing: 0.65;
+    line-height: 2.244;
+    padding-bottom: 18px;
+}
+
+.mySlides__text--pos {
+    font-size: 11px;
+    color: rgb(133, 133, 133);
+    line-height: 1.515;
+    padding-bottom: 20px;
+    font-weight: 500;
+}
+
+.mySlides__text--desc {
+    font-size: 11px;
+    line-height: 20px;
+    letter-spacing: .55;
+    font-weight: 500;
+    color: #18191d;
+}
+
+.mySlides__text--desc1 {
+    display: none;
+}
+
+.mySlides__text--desc-link {
+    display: inline;
+    color: $orange-color;
+    text-decoration: underline;
+    font-size: 11px;
+    line-height: 20px;
+    letter-spacing: .55;
+    font-weight: 500;
+
+}
+
+/* Six columns side by side */
+.column {
+    width: 54px;
+    height: 54px;
+    // // display: none;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+    display: block;
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+    border: 2px solid $orange-color;
+    border-radius: 50%;
+}
+
+@media(max-width:767px) {
+    .column:not(:nth-child(-n+3)) {
+        display: none;
+    }
+
+    .mySlides {
+        text-align: center;
+    }
+}
+
+@media (min-width:768px) {
+    .mySlides-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-box {
+        margin-right: 40px;
+    }
+
+    .button-container {
+        width: 740px;
+    }
+
+    .arrow-icon {
+        height: 32px;
+    }
+
+    .row-box {
+        flex-basis: 506px;
+    }
+
+    .mySlides__text {
+        text-align: left;
+    }
+
+    .mySlides__text--name {
+        font-size: 18px;
+        color: $orange-color;
+        font-weight: 800;
+        letter-spacing: 0.65;
+        line-height: 20.28px;
+    }
+
+    .mySlides__text--pos {
+        font-size: 12px;
+        line-height: 16px;
+        padding-bottom: 20px;
+        font-weight: 500;
+    }
+
+    .mySlides__text--desc1 {
+        display: block;
+        font-size: 11px;
+        line-height: 20px;
+        letter-spacing: .55;
+        font-weight: 500;
+        color: #18191d;
+    }
+
+    .mySlides__text--desc-link {
+        display: inline;
+    }
+}
+
+@media (min-width:768px) and (max-width:1280px) {
+    .button-container {
+        transform: translate(0, -50%);
+    }
+
+}
+
+@media (min-width:1280px) {
+    .button-container {
+       
+        width: 1320px;
+    }
+
+    .arrow-icon {
+        height: 36px;
+    }
+
+    .row-box {
+        flex-basis: 600px;
+    }
+
+    .feedback__title {
+        font-weight: 800;
+        font-size: 42px;
+        line-height: 56px;
+        letter-spacing: 2.1px;
+
+    }
+
+    .img-box__photo {
+        width: 146px;
+    }
+
+    .mySlides__text--name {
+        font-size: 25px;
+
+        font-weight: 800;
+        letter-spacing: 0.65;
+        line-height: 28px;
+    }
+
+    .mySlides__text--pos {
+        font-size: 12px;
+        line-height: 16px;
+        padding-bottom: 20px;
+        font-weight: 500;
+    }
+
+    .mySlides__text--desc {
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: .55;
+        font-weight: 500;
+    }
+
+    .mySlides__text--desc1 {
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: .55;
+        font-weight: 500;
+    }
+
+    .mySlides__text--desc-link {
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: .55;
+        font-weight: 500;
+    }
+}
+
+@media (min-width:1680px) {
+    .feedback-container{
+       width: 1210px;
+    }
+    .feedback__title {
+        font-size: 46px;
+        line-height: 62px;
+    }
+
+
+}
