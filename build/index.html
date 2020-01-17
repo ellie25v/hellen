@@ -2,59 +2,78 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport"
-            content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible"
-            content="ie=edge" />
-        <title>HELLEN</title>
-        <!-- Сюда будет всталена ссылка на файл стилей -->
-        <!-- inject:css -->
-        <link rel="stylesheet"
-            href="css/styles.css">
-        <!-- endinject -->
-    </head>
 
-    <body>
-        <header class="header">
-            <div class="container">
-                <div class="navigation">
-                    <a href="#">
-                        <picture class="logo-picture">
-                            <source srcset="./images/logo_tablet.png"
-                                media="(min-width: 768px)">
-                            <source srcset="./images/logo_mobile.png"
-                                media="(min-width: 320px)">
-                            <img class="logo-img"
-                                src="./images/logo_mobile.png"
-                                alt="logo">
-                        </picture>
-                    </a>
-                    <div class="menu">
-                        <nav class="menu-fall">
-                            <ul class="menu-fall__list">
-                                <li class="menu-fall__list-item"><a href="#"
-                                        class="menu-fall__list-link">программа обучения</a>
-                                </li>
-                                <li class="menu-fall__list-item"><a href="#"
-                                        class="menu-fall__list-link">о нас</a>
-                                </li>
-                                <li class="menu-fall__list-item"><a href="#"
-                                        class="menu-fall__list-link">варианты обучения</a>
-                                </li>
-                                <li class="menu-fall__list-item"><a href="#"
-                                        class="menu-fall__list-link">контакты</a>
-                                </li>
-                            </ul>
-                        </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible"
+      content="ie=edge" />
+    <title>HELLEN</title>
+    <!-- Сюда будет всталена ссылка на файл стилей -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- endinject -->
+  </head>
 
-                        <div class="menu-btn-wrapper">
-                            <a href="#"
-                                class="menu-btn"
-                                target="_blank">консультация по телефону</a>
-                        </div>
-                    </div>
+  <body>
+    <header class="header">
+        <div class="container">
+            <div class="navigation">
+                <a href="#">
+                  <picture class="logo-picture">
+                      <source srcset="./images/logo_tablet.png" media="(min-width: 768px)">                       
+                      <source srcset="./images/logo_mobile.png" media="(min-width: 320px)">
+                        <img class="logo-img" src="./images/logo_mobile.png" alt="logo" >
+                  </picture>
+                </a>
+                <div class="menu">
+                  
+                    <nav class="menu-fall">
+                        <ul class="menu-fall__list">
+                          <li class="menu-fall__list-item"><a href="#"class="menu-fall__list-link">программа обучения</a>
+                            </li>
+                          <li class="menu-fall__list-item"><a href="#"class="menu-fall__list-link">о нас</a>
+                            </li>
+                          <li class="menu-fall__list-item"><a href="#"class="menu-fall__list-link">варианты обучения</a>
+                            </li>
+                          <li class="menu-fall__list-item"><a href="#"class="menu-fall__list-link">контакты</a>
+                            </li>
+                        </ul>                   
+                    </nav> 
+                    
+                    <div class="menu-btn-wrapper">
+
+                        <a class="menu-btn">консультация по телефону</a>
+                        <button class="menu-btn-top"></button>
+                    </div> 
+                    
+                    <nav class="modal-menu-fall">
+                      <div class="modal__header container">
+                        <a href="#">
+                          <picture class="logo-picture">
+                              <source srcset="./images/logo_modal_tablet.png" media="(min-width: 768px)">                       
+                              <source srcset="./images/logo_modal.png" media="(min-width: 320px)">
+                                <img class="logo-img" src="./images/logo_modal.png" alt="logo" >
+                          </picture>
+                        </a>
+                        <button class="modal-btn-close"></button>
+                      </div>
+                      <ul class="modal-menu-fall__list">
+                        <li class="modal-menu-fall__list-item"><a href="#"class="modal-menu-fall__list-link">Программа обучения</a>
+                          </li>
+                        <li class="modal-menu-fall__list-item"><a href="#"class="modal-menu-fall__list-link">О нас</a>
+                          </li>
+                        <li class="modal-menu-fall__list-item"><a href="#"class="modal-menu-fall__list-link">Варианты обучения</a>
+                          </li>
+                        <li class="modal-menu-fall__list-item"><a href="#"class="modal-menu-fall__list-link">Контакты</a>
+                          </li>
+                      </ul>  
+                      <button class="btn-modal">хочу на бесплатное занятие</button>                 
+                  </nav> 
+    
+
+
                 </div>
             </div>
         </header>
@@ -541,5 +560,13 @@
         <!-- endinject -->
     </body>
 
+
+    <!-- Сюда будет всталена ссылка на файл скриптов -->
+    <!-- inject:js -->
+    <script src="js/scripts.js"></script>
+    <!-- endinject -->
+  </body>
+
 </html>
+
 
