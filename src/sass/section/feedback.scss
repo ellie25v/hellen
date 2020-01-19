@@ -8,12 +8,14 @@ img {
     color: rgb(17, 21, 23);
     font-weight: 700;
     line-height: 1.2;
-    letter-spacing: 0.5;
+    letter-spacing: 0.5px;
     padding-bottom: 20px;
 }
 
 /* Position the image container (needed to position the left and right arrows) */
-
+.slide-container {
+    position: relative;
+}
 
 .img-box {
     display: flex;
@@ -23,6 +25,7 @@ img {
 }
 
 .img-box__photo {
+    width: 82px;
     margin-bottom: 18px;
 }
 
@@ -39,9 +42,7 @@ img {
     fill: $orange-color;
 }
 
-.slide-container {
-    position: relative;
-}
+
 
 /* Hide the images by default */
 .mySlides {
@@ -49,6 +50,7 @@ img {
     background-color: #fff;
     box-shadow: 1px 1px 30px #b6b6b6;
     padding: 20px 26px 36px;
+    text-align: center;
 }
 
 /* Add a pointer when hovering over the thumbnail images */
@@ -61,8 +63,8 @@ img {
     display: flex;
     justify-content: space-between;
     position: absolute;
-    top: 50%;
-    // transform: translate(0, -50%);
+    top: 40%;
+    transform: translate(0, -50%);
 
 }
 
@@ -117,7 +119,7 @@ img {
     font-size: 13px;
     color: $orange-color;
     font-weight: 700;
-    letter-spacing: 0.65;
+    letter-spacing: 0.65px;
     line-height: 2.244;
     padding-bottom: 18px;
 }
@@ -133,7 +135,7 @@ img {
 .mySlides__text--desc {
     font-size: 11px;
     line-height: 20px;
-    letter-spacing: .55;
+    letter-spacing: .55px;
     font-weight: 500;
     color: #18191d;
 }
@@ -148,17 +150,19 @@ img {
     text-decoration: underline;
     font-size: 11px;
     line-height: 20px;
-    letter-spacing: .55;
+    letter-spacing: .55px;
     font-weight: 500;
-
 }
 
 /* Six columns side by side */
 .column {
     width: 54px;
     height: 54px;
-    // // display: none;
 }
+
+// .column:not(:nth-child(-n+3)) {
+//     display: none;
+// }
 
 /* Add a transparency effect for thumnbail images */
 .demo {
@@ -173,17 +177,18 @@ img {
     border-radius: 50%;
 }
 
-@media(max-width:767px) {
-    .column:not(:nth-child(-n+3)) {
-        display: none;
-    }
+// @media (max-width:767px) {
+//     .column:not(:nth-child(-n+3)) {
+//         display: none;
+//     }
 
-    .mySlides {
-        text-align: center;
-    }
-}
+//     .mySlides {
+//         text-align: center;
+//     }
+// }
 
 @media (min-width:768px) {
+
     .mySlides-box {
         display: flex;
         justify-content: center;
@@ -191,7 +196,9 @@ img {
     }
 
     .img-box {
+        display: block;
         margin-right: 40px;
+        width: 100%;
     }
 
     .button-container {
@@ -214,7 +221,7 @@ img {
         font-size: 18px;
         color: $orange-color;
         font-weight: 800;
-        letter-spacing: 0.65;
+        letter-spacing: 0.65px;
         line-height: 20.28px;
     }
 
@@ -226,29 +233,33 @@ img {
     }
 
     .mySlides__text--desc1 {
-        display: block;
+        display: inline;
         font-size: 11px;
         line-height: 20px;
-        letter-spacing: .55;
+        letter-spacing: .55px;
         font-weight: 500;
         color: #18191d;
     }
 
-    .mySlides__text--desc-link {
-        display: inline;
-    }
-}
-
-@media (min-width:768px) and (max-width:1280px) {
     .button-container {
-        transform: translate(0, -50%);
+        top: 50%;
+        transform: translate(-26px, -50%);
     }
 
+    .column:nth-child(n+3) {
+        display: block;
+    }
 }
+
 
 @media (min-width:1280px) {
+    .mySlides-box {
+        align-items: flex-start;
+    }
+
     .button-container {
-       
+        top: 50%;
+        transform: translate(-55px, -50%);
         width: 1320px;
     }
 
@@ -265,18 +276,16 @@ img {
         font-size: 42px;
         line-height: 56px;
         letter-spacing: 2.1px;
-
     }
 
-    .img-box__photo {
+    .img-box {
         width: 146px;
     }
 
     .mySlides__text--name {
         font-size: 25px;
-
         font-weight: 800;
-        letter-spacing: 0.65;
+        letter-spacing: 0.65px;
         line-height: 28px;
     }
 
@@ -290,33 +299,32 @@ img {
     .mySlides__text--desc {
         font-size: 16px;
         line-height: 28px;
-        letter-spacing: .55;
+        letter-spacing: .55px;
         font-weight: 500;
     }
 
     .mySlides__text--desc1 {
         font-size: 16px;
         line-height: 28px;
-        letter-spacing: .55;
+        letter-spacing: .55px;
         font-weight: 500;
     }
 
     .mySlides__text--desc-link {
         font-size: 16px;
         line-height: 28px;
-        letter-spacing: .55;
+        letter-spacing: .55px;
         font-weight: 500;
     }
 }
 
 @media (min-width:1680px) {
-    .feedback-container{
-       width: 1210px;
+    .feedback-container {
+        width: 1210px;
     }
+
     .feedback__title {
         font-size: 46px;
         line-height: 62px;
     }
-
-
 }
